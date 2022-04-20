@@ -3,10 +3,11 @@
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
+  --background: hsl(0, 100%, 97%);
 
   /*gradiens*/
-  --linear: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-  --linear-two: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --linear: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --linear-two: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 
   /*Typography*/
   --font-size: 1.6rem;
@@ -14,6 +15,12 @@
   --font-light: 300;
   --font-medium: 400;
   --font-bold: 600;
+
+  /*Margin bottom*/
+  --mb-0-8: 8px;
+  --mb-2-4: 24px;
+  --mb-3-6: 36px;
+  --mb-4-8: 48px;
 }
 
 * {
@@ -27,4 +34,81 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--font-size);
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+.logo-container {
+  padding: 20px;
+  background-color: white;
+}
+.logo {
+  width: 120px;
+}
+.hero-container {
+  margin-bottom: var(--mb-4-8);
+}
+.hero {
+  width: 100%;
+}
+.details {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0 28px;
+}
+.details__title {
+  margin-bottom: var(--mb-2-4);
+  font-size: 4rem;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+}
+.details__title span {
+  font-weight: var(--font-light);
+  color: var(--desaturated-red);
+}
+.details__subtitle {
+  margin-bottom: var(--mb-2-4);
+  line-height: 2.8rem;
+  color: var(--desaturated-red);
+}
+.details__input-container {
+  position: relative;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--desaturated-red);
+  text-align: start;
+}
+.details__input {
+  padding: 8px 0;
+  outline: 0;
+  border: 0;
+  background-color: var(--background);
+  color: var(--desaturated-red);
+  font-size: var(--font-size);
+}
+.details__input::placeholder {
+  background-color: var(--background);
+  color: var(--desaturated-red);
+}
+.button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 68px;
+  height: 52px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: 0;
+  outline: 0;
+  color: white;
+  box-shadow: 0 12px 4px 4px rgb(206 151 151 / 25%);
+}
+
+
+}
 }
