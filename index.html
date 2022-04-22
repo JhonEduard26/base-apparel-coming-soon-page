@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" media="screen and (min-width: 1080px)" href="./assets/css/desktop.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="./assets/css/desktop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon" />
     <title>Base Apparel Coming Soon Page</title>
   </head>
   <body>
@@ -19,9 +20,7 @@
       <figure class="logo-container">
         <img class="logo" src="./assets/img/logo.svg" alt="logo" />
       </figure>
-      <figure class="hero-container">
-        <img class="hero" src="./assets/img/hero-mobile.jpg" alt="hero" />
-      </figure>
+      <div class="hero-container"></div>
       <section class="details">
         <h2 class="details__title">
           <span>We're</span><br />
@@ -32,13 +31,14 @@
           Hello fellow shoppers! We're currently building our new fashion store. Add your email
           below to stay up-to-date with announcements and our launch deals.
         </p>
-        <div class="details__input-container">
-          <input class="details__input" type="text" placeholder="Email Address" />
-          <button class="button" type="button">
-            <img src="./assets/img/icon-arrow.svg" alt="send" />
-          </button>
-        </div>
+        <form class="details__input-container" novalidate>
+          <input class="details__input" type="email" placeholder="Email Address" required />
+          <img class="details__alert-img hidden" src="./assets/img/icon-error.svg" alt="alert" />
+          <button class="button" type="submit"></button>
+        </form>
+        <span class="details__alert-message hidden">Please provide a valid email</span>
       </section>
     </main>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
