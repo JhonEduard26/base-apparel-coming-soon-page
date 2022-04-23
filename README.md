@@ -26,12 +26,14 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![mobile](./assets/screenshots/mobile.jpeg)
+![mobile-state](./assets/screenshots/mobile-state.jpeg)
+![desktop](./assets/screenshots/desktop.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/JhonEduard26/base-apparel-coming-soon-page)
+- Live Site URL: [GitHub Pages](https://jhoneduard26.github.io/base-apparel-coming-soon-page/)
 
 ## My process
 
